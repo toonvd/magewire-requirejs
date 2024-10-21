@@ -2,6 +2,7 @@ define([
     'jquery',
     'mage/cookies',
     'Livewire',
+    'pouchdb'
 ], function ($, MageCookies, Livewire) {
     'use strict';
 
@@ -15,6 +16,8 @@ define([
     window.Magewire = window.magewire
 
     window.livewire_token = $.mage.cookies.get('form_key')
+    const PouchDB = require('pouchdb');
+    window.magewire_db = new PouchDB('magewire', {revs_limit: 1, auto_compaction: true});
 
     return function (config) {
         window.magewire.devTools(config.app_debug ?? false)

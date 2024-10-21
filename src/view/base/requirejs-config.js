@@ -3,6 +3,7 @@ var config = {
         Livewire: 'Magewirephp_Magewire/js/livewire'
     },
     deps: [
+        'Magewirephp_MagewireRequireJs/js/pouchdb',
         'Magewirephp_MagewireRequireJs/js/magewire/plugin/intersect',
         'Magewirephp_MagewireRequireJs/js/magewire-init',
         'Magewirephp_MagewireRequireJs/js/magewire-message',
@@ -12,7 +13,8 @@ var config = {
     map: {
         '*': {
             magewire: 'Magewirephp_MagewireRequireJs/js/magewire',
-            magewireEvent: 'Magewirephp_MagewireRequireJs/js/magewire-event'
+            magewireEvent: 'Magewirephp_MagewireRequireJs/js/magewire-event',
+            pouchdb: 'Magewirephp_MagewireRequireJs/js/pouchdb',
         }
     }
 }
