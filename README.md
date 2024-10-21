@@ -1,3 +1,28 @@
+#POC
+
+## Creates a new DB
+https://github.com/toonvd/magewire-requirejs/blob/cachepoc/src/view/base/web/js/magewire.js#L19
+
+## Listens for processed messages and adds them to the DB
+https://github.com/toonvd/magewire-requirejs/blob/cachepoc/src/view/base/web/js/magewire-loader.js#L54
+
+## Adds DB content to existing elements on page load
+https://github.com/toonvd/magewire-requirejs/blob/cachepoc/src/view/base/web/js/magewire-loader.js#L9
+
+## Improvements
+- Do loading the Livewire way + support HTML morphing.
+  https://livewire.laravel.com/docs/javascript#component-initialization
+- Do more than fething only data in processed messages.
+- Escape output to prevent XSS.
+- Support session based caching (add a timestamp with session expire date + check for it)
+
+## Debugging
+Use chrome devtools.
+![screenshot](https://ctrlv.link/shots/2024/10/21/0Mvu.png)
+
+
+
+
 # Magewire Require JS
 [![Latest Stable Version](http://poser.pugx.org/magewirephp/magewire-requirejs/v)](https://packagist.org/packages/magewirephp/magewire-requirejs)
 [![Total Downloads](http://poser.pugx.org/magewirephp/magewire-requirejs/downloads)](https://packagist.org/packages/magewirephp/magewire-requirejs)
